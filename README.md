@@ -88,6 +88,7 @@ TODO
 
     /* (Step 1) Project initalization removed for brevity */
 
+    // TODO: instead pass TargetStrategy2X as prop to Project!!!!
     new TargetStrategy(project, {
       strategy: TargetStrategy.STRATEGY_2X, // default, corresponds ['dev', 'prod']
       required: ['baseDomain'], // default, add/remove values to enforce specific configuration keys for all accounts
