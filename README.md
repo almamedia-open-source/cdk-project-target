@@ -172,6 +172,13 @@ TODO
 +EC.getName
 ```
 
+#### Environment URL/DNS compatible name
+
+```diff
+-Ec.getSubdomain   # foo-bar.feature
++EC.getUrlName     # feature-foo-bar
+```
+
 ### Environment Label (New)
 
 ```diff
@@ -196,13 +203,6 @@ stable
 #### Environment Description
 ```diff
 -Ec.getDescription
-```
-
-#### Environment URL/DNS compatible name
-
-```diff
--Ec.getSubdomain   # foo-bar.feature
-+EC.getUrlName     # feature-foo-bar
 ```
 
 #### Environment Domain
