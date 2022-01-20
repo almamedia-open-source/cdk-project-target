@@ -1,7 +1,7 @@
 import { ProjectContext } from '@almamedia-open-source/cdk-project-context';
+import { paramCase } from 'change-case';
 import { Construct } from 'constructs';
 import { getLabelByName, EnvironmentLabel, getCategoryByLabel, EnvironmentCategory } from '../configurations/environments';
-import { paramCase } from 'change-case';
 
 export class EnvironmentContext {
 
