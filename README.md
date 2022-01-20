@@ -187,9 +187,11 @@ TODO
 
 #### Environment Type (Category)
 ```diff
--Ec.getType      # mock, development, preview, verification, stable
-+EC.getCategory  # mock, development, feature, verification, stable
+-Ec.getType
++EC.getCategory
 ```
+
+Return values:
 ```diff
 mock
 development
