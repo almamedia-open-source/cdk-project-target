@@ -86,7 +86,13 @@ TODO
 
 ### Account Context
 
-Most of the CDK v1 `AccountContext` (`Ac`) methods can be aliased directly with CDK v2 `ProjectContext` (`PC`) counterparts.
+Match `ProjectContext` (`PC`) casing:
+```diff
+-Ac
++AC
+```
+
+Methods follow the format used in `ProjectContext` (where there is overlap):
 
 #### Account ID
 ```diff
