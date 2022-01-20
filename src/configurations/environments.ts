@@ -19,7 +19,7 @@ export enum EnvironmentCategory {
  *
  * Labels are useful since Environment Name can be complex,
  * such as `feature/foo-bar` or `qa3`,
- * but we need to be able to “label” all `feature/*` and `qaN` environment names
+ * but we need to be able to “label” all `feature/*` and `qaN` environments
  * as either `feature` or `qa`.
  */
 export enum EnvironmentLabel {
@@ -47,3 +47,25 @@ export const labelToCategory: Record<EnvironmentLabel, EnvironmentCategory> = {
   [EnvironmentLabel.PREPRODUCTION]: EnvironmentCategory.VERIFICATION,
   [EnvironmentLabel.PRODUCTION]: EnvironmentCategory.STABLE,
 };
+
+
+const ENV_REGEXP_MOCK = /^mock[/0-9/]+$/i;
+const ENV_REGEXP_FEATURE = /^preview\/[/a-zA-z0-9-]+$/i;
+const ENV_REGEXP_QA = /^qa[/0-9/]+$/i;
+
+/**
+ * TODO document
+ */
+export function getLabelByName(name: string): EnvironmentLabel {
+  if (ENV_REGEXP_MOCK.test(name)) return EnvironmentLabel.MOCK;
+  if (ENV_REGEXP_FEATURE.test(name)) return EnvironmentLabel.FEATURE;
+  if (ENV_REGEXP_QA.test(name)) return EnvironmentLabel.QA;
+  return <EnvironmentLabel>name;
+}
+
+/**
+ * TODO document
+ */
+export function getCategoryByLabel(label: EnvironmentLabel): EnvironmentCategory {
+  return labelToCategory[label];
+}

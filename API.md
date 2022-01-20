@@ -283,6 +283,352 @@ public readonly prod: Account;
 
 ## Classes <a name="Classes" id="classes"></a>
 
+### AccountContext <a name="@almamedia-open-source/cdk-project-target.AccountContext" id="almamediaopensourcecdkprojecttargetaccountcontext"></a>
+
+#### Initializers <a name="@almamedia-open-source/cdk-project-target.AccountContext.Initializer" id="almamediaopensourcecdkprojecttargetaccountcontextinitializer"></a>
+
+```typescript
+import { AccountContext } from '@almamedia-open-source/cdk-project-target'
+
+new AccountContext()
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+
+---
+
+
+#### Static Functions <a name="Static Functions" id="static-functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`getAccountConfig`](#almamediaopensourcecdkprojecttargetaccountcontextgetaccountconfig) | *No description.* |
+| [`getAccountId`](#almamediaopensourcecdkprojecttargetaccountcontextgetaccountid) | *No description.* |
+| [`getAccountType`](#almamediaopensourcecdkprojecttargetaccountcontextgetaccounttype) | *No description.* |
+| [`isDev`](#almamediaopensourcecdkprojecttargetaccountcontextisdev) | *No description.* |
+| [`isMock`](#almamediaopensourcecdkprojecttargetaccountcontextismock) | *No description.* |
+| [`isPreProd`](#almamediaopensourcecdkprojecttargetaccountcontextispreprod) | *No description.* |
+| [`isProd`](#almamediaopensourcecdkprojecttargetaccountcontextisprod) | *No description.* |
+| [`isShared`](#almamediaopensourcecdkprojecttargetaccountcontextisshared) | *No description.* |
+
+---
+
+##### `getAccountConfig` <a name="@almamedia-open-source/cdk-project-target.AccountContext.getAccountConfig" id="almamediaopensourcecdkprojecttargetaccountcontextgetaccountconfig"></a>
+
+```typescript
+import { AccountContext } from '@almamedia-open-source/cdk-project-target'
+
+AccountContext.getAccountConfig(scope: Construct, key: string)
+```
+
+###### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountContext.parameter.scope" id="almamediaopensourcecdkprojecttargetaccountcontextparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+---
+
+###### `key`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountContext.parameter.key" id="almamediaopensourcecdkprojecttargetaccountcontextparameterkey"></a>
+
+- *Type:* `string`
+
+---
+
+##### `getAccountId` <a name="@almamedia-open-source/cdk-project-target.AccountContext.getAccountId" id="almamediaopensourcecdkprojecttargetaccountcontextgetaccountid"></a>
+
+```typescript
+import { AccountContext } from '@almamedia-open-source/cdk-project-target'
+
+AccountContext.getAccountId(scope: Construct)
+```
+
+###### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountContext.parameter.scope" id="almamediaopensourcecdkprojecttargetaccountcontextparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+---
+
+##### `getAccountType` <a name="@almamedia-open-source/cdk-project-target.AccountContext.getAccountType" id="almamediaopensourcecdkprojecttargetaccountcontextgetaccounttype"></a>
+
+```typescript
+import { AccountContext } from '@almamedia-open-source/cdk-project-target'
+
+AccountContext.getAccountType(scope: Construct)
+```
+
+###### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountContext.parameter.scope" id="almamediaopensourcecdkprojecttargetaccountcontextparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+---
+
+##### `isDev` <a name="@almamedia-open-source/cdk-project-target.AccountContext.isDev" id="almamediaopensourcecdkprojecttargetaccountcontextisdev"></a>
+
+```typescript
+import { AccountContext } from '@almamedia-open-source/cdk-project-target'
+
+AccountContext.isDev(scope: Construct)
+```
+
+###### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountContext.parameter.scope" id="almamediaopensourcecdkprojecttargetaccountcontextparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+---
+
+##### `isMock` <a name="@almamedia-open-source/cdk-project-target.AccountContext.isMock" id="almamediaopensourcecdkprojecttargetaccountcontextismock"></a>
+
+```typescript
+import { AccountContext } from '@almamedia-open-source/cdk-project-target'
+
+AccountContext.isMock(scope: Construct)
+```
+
+###### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountContext.parameter.scope" id="almamediaopensourcecdkprojecttargetaccountcontextparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+---
+
+##### `isPreProd` <a name="@almamedia-open-source/cdk-project-target.AccountContext.isPreProd" id="almamediaopensourcecdkprojecttargetaccountcontextispreprod"></a>
+
+```typescript
+import { AccountContext } from '@almamedia-open-source/cdk-project-target'
+
+AccountContext.isPreProd(scope: Construct)
+```
+
+###### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountContext.parameter.scope" id="almamediaopensourcecdkprojecttargetaccountcontextparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+---
+
+##### `isProd` <a name="@almamedia-open-source/cdk-project-target.AccountContext.isProd" id="almamediaopensourcecdkprojecttargetaccountcontextisprod"></a>
+
+```typescript
+import { AccountContext } from '@almamedia-open-source/cdk-project-target'
+
+AccountContext.isProd(scope: Construct)
+```
+
+###### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountContext.parameter.scope" id="almamediaopensourcecdkprojecttargetaccountcontextparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+---
+
+##### `isShared` <a name="@almamedia-open-source/cdk-project-target.AccountContext.isShared" id="almamediaopensourcecdkprojecttargetaccountcontextisshared"></a>
+
+```typescript
+import { AccountContext } from '@almamedia-open-source/cdk-project-target'
+
+AccountContext.isShared(scope: Construct)
+```
+
+###### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountContext.parameter.scope" id="almamediaopensourcecdkprojecttargetaccountcontextparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+---
+
+
+
+### EnvironmentContext <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext" id="almamediaopensourcecdkprojecttargetenvironmentcontext"></a>
+
+#### Initializers <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.Initializer" id="almamediaopensourcecdkprojecttargetenvironmentcontextinitializer"></a>
+
+```typescript
+import { EnvironmentContext } from '@almamedia-open-source/cdk-project-target'
+
+new EnvironmentContext()
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+
+---
+
+
+#### Static Functions <a name="Static Functions" id="static-functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`getCategory`](#almamediaopensourcecdkprojecttargetenvironmentcontextgetcategory) | Get Environment Category. |
+| [`getFeatureInfo`](#almamediaopensourcecdkprojecttargetenvironmentcontextgetfeatureinfo) | Get Feature Info. |
+| [`getLabel`](#almamediaopensourcecdkprojecttargetenvironmentcontextgetlabel) | Get Environment Label. |
+| [`getName`](#almamediaopensourcecdkprojecttargetenvironmentcontextgetname) | Get Environment Name. |
+| [`getUrlName`](#almamediaopensourcecdkprojecttargetenvironmentcontextgeturlname) | Get Environment URL/DNS Compatible Name. |
+| [`isDevelopment`](#almamediaopensourcecdkprojecttargetenvironmentcontextisdevelopment) | Check if Environment is part of `development` category. |
+| [`isFeature`](#almamediaopensourcecdkprojecttargetenvironmentcontextisfeature) | Check if Environment is part of `feature` category. |
+| [`isMock`](#almamediaopensourcecdkprojecttargetenvironmentcontextismock) | Check if Environment is part of `mock` category. |
+| [`isStable`](#almamediaopensourcecdkprojecttargetenvironmentcontextisstable) | Check if Environment is part of `stable` category. |
+| [`isVerification`](#almamediaopensourcecdkprojecttargetenvironmentcontextisverification) | Check if Environment is part of `verification` category. |
+
+---
+
+##### `getCategory` <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.getCategory" id="almamediaopensourcecdkprojecttargetenvironmentcontextgetcategory"></a>
+
+```typescript
+import { EnvironmentContext } from '@almamedia-open-source/cdk-project-target'
+
+EnvironmentContext.getCategory(scope: Construct)
+```
+
+###### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.parameter.scope" id="almamediaopensourcecdkprojecttargetenvironmentcontextparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+Construct.
+
+---
+
+##### `getFeatureInfo` <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.getFeatureInfo" id="almamediaopensourcecdkprojecttargetenvironmentcontextgetfeatureinfo"></a>
+
+```typescript
+import { EnvironmentContext } from '@almamedia-open-source/cdk-project-target'
+
+EnvironmentContext.getFeatureInfo(scope: Construct)
+```
+
+###### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.parameter.scope" id="almamediaopensourcecdkprojecttargetenvironmentcontextparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+Construct.
+
+---
+
+##### `getLabel` <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.getLabel" id="almamediaopensourcecdkprojecttargetenvironmentcontextgetlabel"></a>
+
+```typescript
+import { EnvironmentContext } from '@almamedia-open-source/cdk-project-target'
+
+EnvironmentContext.getLabel(scope: Construct)
+```
+
+###### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.parameter.scope" id="almamediaopensourcecdkprojecttargetenvironmentcontextparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+Construct.
+
+---
+
+##### `getName` <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.getName" id="almamediaopensourcecdkprojecttargetenvironmentcontextgetname"></a>
+
+```typescript
+import { EnvironmentContext } from '@almamedia-open-source/cdk-project-target'
+
+EnvironmentContext.getName(scope: Construct)
+```
+
+###### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.parameter.scope" id="almamediaopensourcecdkprojecttargetenvironmentcontextparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+Construct.
+
+---
+
+##### `getUrlName` <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.getUrlName" id="almamediaopensourcecdkprojecttargetenvironmentcontextgeturlname"></a>
+
+```typescript
+import { EnvironmentContext } from '@almamedia-open-source/cdk-project-target'
+
+EnvironmentContext.getUrlName(scope: Construct)
+```
+
+###### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.parameter.scope" id="almamediaopensourcecdkprojecttargetenvironmentcontextparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+Construct.
+
+---
+
+##### `isDevelopment` <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.isDevelopment" id="almamediaopensourcecdkprojecttargetenvironmentcontextisdevelopment"></a>
+
+```typescript
+import { EnvironmentContext } from '@almamedia-open-source/cdk-project-target'
+
+EnvironmentContext.isDevelopment(scope: Construct)
+```
+
+###### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.parameter.scope" id="almamediaopensourcecdkprojecttargetenvironmentcontextparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+Construct.
+
+---
+
+##### `isFeature` <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.isFeature" id="almamediaopensourcecdkprojecttargetenvironmentcontextisfeature"></a>
+
+```typescript
+import { EnvironmentContext } from '@almamedia-open-source/cdk-project-target'
+
+EnvironmentContext.isFeature(scope: Construct)
+```
+
+###### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.parameter.scope" id="almamediaopensourcecdkprojecttargetenvironmentcontextparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+Construct.
+
+---
+
+##### `isMock` <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.isMock" id="almamediaopensourcecdkprojecttargetenvironmentcontextismock"></a>
+
+```typescript
+import { EnvironmentContext } from '@almamedia-open-source/cdk-project-target'
+
+EnvironmentContext.isMock(scope: Construct)
+```
+
+###### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.parameter.scope" id="almamediaopensourcecdkprojecttargetenvironmentcontextparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+Construct.
+
+---
+
+##### `isStable` <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.isStable" id="almamediaopensourcecdkprojecttargetenvironmentcontextisstable"></a>
+
+```typescript
+import { EnvironmentContext } from '@almamedia-open-source/cdk-project-target'
+
+EnvironmentContext.isStable(scope: Construct)
+```
+
+###### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.parameter.scope" id="almamediaopensourcecdkprojecttargetenvironmentcontextparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+Construct.
+
+---
+
+##### `isVerification` <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.isVerification" id="almamediaopensourcecdkprojecttargetenvironmentcontextisverification"></a>
+
+```typescript
+import { EnvironmentContext } from '@almamedia-open-source/cdk-project-target'
+
+EnvironmentContext.isVerification(scope: Construct)
+```
+
+###### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentContext.parameter.scope" id="almamediaopensourcecdkprojecttargetenvironmentcontextparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+Construct.
+
+---
+
+
+
 ### ProjectAccounts1x <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts1x" id="almamediaopensourcecdkprojecttargetprojectaccounts1x"></a>
 
 #### Initializers <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts1x.Initializer" id="almamediaopensourcecdkprojecttargetprojectaccounts1xinitializer"></a>
@@ -543,7 +889,7 @@ Categories are useful grouping to make distinction between `stable` environments
 
 Available Environment Labels.
 
-Labels are useful since Environment Name can be complex, such as `feature/foo-bar` or `qa3`, but we need to be able to “label” all `feature/*` and `qaN` environment names as either `feature` or `qa`.
+Labels are useful since Environment Name can be complex, such as `feature/foo-bar` or `qa3`, but we need to be able to “label” all `feature/*` and `qaN` environments as either `feature` or `qa`.
 
 #### `MOCK` <a name="@almamedia-open-source/cdk-project-target.EnvironmentLabel.MOCK" id="almamediaopensourcecdkprojecttargetenvironmentlabelmock"></a>
 

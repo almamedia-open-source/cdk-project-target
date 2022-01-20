@@ -131,7 +131,6 @@ Most of the CDK v1 `AccountContext` (`Ac`) methods can be aliased directly with 
 #### Account Base Domain
 ```diff
 -Ac.getDomain
-+AC.getAccountConfig(this, 'baseDomain')
 ```
 
 #### Account Type
@@ -184,24 +183,13 @@ TODO
 #### Environment Name
 ```diff
 -Ec.getName
-+EC.getType
++EC.getName
 ```
 
-#### Environment Description
-```diff
--Ec.getDescription
-```
+### Environment Label (New)
 
-#### Environment Subdomain
 ```diff
--Ec.getSubdomain   # foo-bar.feature
-+EC.getUrlName     # feature-foo-bar
-```
-
-#### Environment Domain
-```diff
--Ec.getDomain
-+TODO
++Ec.getLabel
 ```
 
 #### Environment Type (Category)
@@ -218,10 +206,33 @@ verification
 stable
 ```
 
+
+#### Environment Description
+```diff
+-Ec.getDescription
+```
+
+#### Environment URL/DNS compatible name
+
+```diff
+-Ec.getSubdomain   # foo-bar.feature
++EC.getUrlName     # feature-foo-bar
+```
+
+#### Environment Domain
+
+Implemented in separate construct
+
+```diff
+-Ec.getDomain
+```
+
+
+
 #### Preview (Feature) Environment Info
 ```diff
 -Ec.getPreviewInfo
-+EC.getFeature
++EC.getFeatureInfo
 ```
 
 #### Is Mock Environment

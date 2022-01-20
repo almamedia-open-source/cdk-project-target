@@ -2,6 +2,7 @@
   "dependencies": [
     {
       "name": "@almamedia-open-source/cdk-project-context",
+      "version": "v0.0.12",
       "type": "build"
     },
     {
@@ -115,6 +116,7 @@
     },
     {
       "name": "@almamedia-open-source/cdk-project-context",
+      "version": "v0.0.12",
       "type": "peer"
     },
     {

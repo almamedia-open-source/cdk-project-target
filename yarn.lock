@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@almamedia-open-source/cdk-project-context@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/@almamedia-open-source/cdk-project-context/-/cdk-project-context-0.0.10.tgz#ffec89755765b8dab4cb83b17b2e621aa8ddbfcb"
-  integrity sha512-efRMZjxu8dJKlG1AwyZkLsbED3fzMGKiIJ46rNxht2vkIzhnZhDUuo3WQ/bBmybWauuaAHY1jQWFAqOyfqg/0w==
+"@almamedia-open-source/cdk-project-context@v0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@almamedia-open-source/cdk-project-context/-/cdk-project-context-0.0.12.tgz#587267edbe4373b6f43e86285cb43dd528bdae5d"
+  integrity sha512-3iqiQVc9aA3ZWVb1i+1yU4XHG4Epc70Ppi4BCLiY8GTML8eQiq//u/+bfBLJUrks9ViC3UL/LPPPe/AqJe7B4A==
 
 "@aws-cdk/assert@^2.0.0":
   version "2.4.0"
