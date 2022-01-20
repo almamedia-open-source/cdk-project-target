@@ -47,7 +47,14 @@ TODO
 
 ## Usage
 
-1. Initialize your CDK App with `Project` construct as documented in [`@almamedia-open-source/cdk-project-context`](https://github.com/almamedia-open-source/cdk-project-context):
+1. Initialize your CDK App with `Project` construct as documented in [`@almamedia-open-source/cdk-project-context`](https://github.com/almamedia-open-source/cdk-project-context) but also use one of the following classes:
+
+    - `ProjectAccounts1x`
+    - `ProjectAccounts2x`
+    - `ProjectAccounts3x`
+
+    <br>
+
     ```ts
     // bin/app.ts
     import { Project } from '@almamedia-open-source/cdk-project-context';
@@ -83,6 +90,8 @@ TODO
 
 
 ## Migration
+
+**This section only applies if you're an Alma Media employee who is migrating from our internal CDK v1 compatible constructs.**
 
 ### Account Context
 
@@ -149,7 +158,7 @@ TODO
 #### Get Configuration
 ```diff
 -Ac.getConfig(ths, 'path', defaultValue)
-+AC.getAccountConfig(this, 'path', defaultValue) # TODO: Implement
++AC.getAccountConfig(this, 'path', defaultValue) # TODO: Implement the lodash path in ProjectContext
 ```
 
 
