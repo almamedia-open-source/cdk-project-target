@@ -6,6 +6,29 @@ export interface ProjectAccounts2xProps {
   readonly [AccountType.PROD]: Account;
 }
 
+/**
+ * Enables dual account strategy.
+ *
+ * 1. `dev` account with environments:
+ *    - development
+ *    - feature/*
+ *    - test
+ *    - qaN
+ *    - staging
+ * 2. `prod` account with environments:
+ *    - preproduction
+ *    - production
+ *
+ * @example
+ * new ProjectAccounts2x({
+ *   dev: {
+ *     id: '111111111111',
+ *   },
+ *   prod: {
+ *     id: '222222222222',
+ *   },
+ * }),
+ */
 export class ProjectAccounts2x {
   readonly [AccountType.DEV]: AccountWithEnvironments;
   readonly [AccountType.PROD]: AccountWithEnvironments;

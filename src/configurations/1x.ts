@@ -5,6 +5,25 @@ export interface ProjectAccounts1xProps {
   readonly [AccountType.SHARED]: Account;
 }
 
+/**
+ * Enables single account strategy.
+ *
+ * 1. `shared` account with environments:
+ *    - development
+ *    - feature/*
+ *    - test
+ *    - qaN
+ *    - staging
+ *    - preproduction
+ *    - production
+ *
+ * @example
+ * new ProjectAccounts1x({
+ *   shared: {
+ *     id: '111111111111',
+ *   },
+ * }),
+ */
 export class ProjectAccounts1x {
   readonly [AccountType.SHARED]: AccountWithEnvironments;
 
