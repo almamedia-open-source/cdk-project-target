@@ -51,6 +51,7 @@ TODO
     ```ts
     // bin/app.ts
     import { Project } from '@almamedia-open-source/cdk-project-context';
+    import { ProjectAccounts2x } from '@almamedia-open-source/cdk-project-target';
 
     // new Project instead of new App
     const project = new Project({
@@ -61,7 +62,7 @@ TODO
         email: 'mad.scientists@acme.example.com',
       },
       defaultRegion: 'eu-west-1', // defaults to one of: $CDK_DEFAULT_REGION, $AWS_REGION or us-east-1
-      accounts: {
+      accounts: new ProjectAccounts2x({
         dev: {
           id: '111111111111',
           config: {
@@ -74,41 +75,11 @@ TODO
             baseDomain: 'example.com',
           },
         },
-      },
+      }),
     })
     ```
 
-2. Configure Project Accounts (Strategy)
-    ```ts
-    // bin/app.ts
-    import { Project } from '@almamedia-open-source/cdk-project-context';
-    import { TargetStrategy } from '@almamedia-open-source/cdk-project-environment';
-    import { Account } from './lib/account';
-    import { Environment } from '/lib/environment';
-
-    /* (Step 1) Project initalization removed for brevity */
-
-    // TODO: instead pass TargetStrategy2X as prop to Project!!!!
-    new TargetStrategy(project, {
-      strategy: TargetStrategy.STRATEGY_2X, // default, corresponds ['dev', 'prod']
-      required: ['baseDomain'], // default, add/remove values to enforce specific configuration keys for all accounts
-    });
-    ```
-
-3. TODO
-    ```ts
-    // bin/app.ts
-    import { Project } from '@almamedia-open-source/cdk-project-context';
-    import { ProjectAccounts } from '@almamedia-open-source/cdk-project-environment';
-    import { Account } from './lib/account';
-    import { Environment } from '/lib/environment';
-
-    /* (Step 1) Project initalization removed for brevity */
-    /* (Step 2) TargetStrategy initalization removed for brevity */
-
-    new Account(project);// extends ProjectAccount
-    new Environment(project);// extends ProjectEnvironment
-    ```
+2. TODO
 
 
 ## Migration
@@ -221,12 +192,11 @@ stable
 
 #### Environment Domain
 
-Implemented in separate construct
+Implemented in separate construct.
 
 ```diff
 -Ec.getDomain
 ```
-
 
 
 #### Preview (Feature) Environment Info
