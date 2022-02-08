@@ -1,4 +1,4 @@
-# AWS CDK Project Target
+# ![Alma CDK Project Target](/assets/alma-cdk-project-target.png)
 
 ![CDK Version](https://img.shields.io/badge/CDK-v2-informational "CDK v2")
 ![Stability](https://img.shields.io/badge/Stability-Experimental-yellow "Stability: Experimental")
