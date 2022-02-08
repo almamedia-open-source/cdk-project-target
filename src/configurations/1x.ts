@@ -1,8 +1,9 @@
-import { Account, AccountType, AccountWithEnvironments } from './accounts';
+import { Account } from '@almamedia-open-source/cdk-project-context';
+import { AccountConfiguration, AccountType } from './accounts';
 import { EnvironmentLabel } from './environments';
 
 export interface ProjectAccounts1xProps {
-  readonly [AccountType.SHARED]: Account;
+  readonly [AccountType.SHARED]: AccountConfiguration;
 }
 
 /**
@@ -24,8 +25,8 @@ export interface ProjectAccounts1xProps {
  *   },
  * }),
  */
-export class ProjectAccounts1x {
-  readonly [AccountType.SHARED]: AccountWithEnvironments;
+export class ProjectAccounts1x implements Record<string, Account> {
+  [accountType: string]: Account;
 
   constructor(props: ProjectAccounts1xProps) {
     this[AccountType.SHARED] = {
@@ -34,6 +35,7 @@ export class ProjectAccounts1x {
         EnvironmentLabel.DEVELOPMENT,
         EnvironmentLabel.FEATURE,
         EnvironmentLabel.TEST,
+        EnvironmentLabel.QA,
         EnvironmentLabel.STAGING,
         EnvironmentLabel.PREPRODUCTION,
         EnvironmentLabel.PRODUCTION,

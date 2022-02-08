@@ -1,3 +1,16 @@
+class EnvRegExp {
+  private regexp: RegExp;
+
+  constructor(base: string) {
+    this.regexp = new RegExp(`^${base}$`, 'i');
+  }
+
+  test(value: string): boolean {
+    return this.regexp.test(value);
+  }
+
+}
+
 
 /**
  * Availalbe Enviroment Categories.
@@ -23,12 +36,12 @@ export enum EnvironmentCategory {
  * as either `feature` or `qa`.
  */
 export enum EnvironmentLabel {
-  MOCK='mock',
+  MOCK='mock[0-9]',
   DEVELOPMENT='development',
-  FEATURE='feature',
+  FEATURE='feature/[/a-zA-z0-9-]+',
   TEST='test', // replaces "prestaging"
   STAGING='staging',
-  QA='qa',
+  QA='qa[0-9]',
   PREPRODUCTION='preproduction',
   PRODUCTION='production',
 }
@@ -49,9 +62,9 @@ export const labelToCategory: Record<EnvironmentLabel, EnvironmentCategory> = {
 };
 
 
-const ENV_REGEXP_MOCK = /^mock[/0-9/]+$/i;
-const ENV_REGEXP_FEATURE = /^preview\/[/a-zA-z0-9-]+$/i;
-const ENV_REGEXP_QA = /^qa[/0-9/]+$/i;
+const ENV_REGEXP_MOCK = new EnvRegExp(EnvironmentLabel.MOCK);
+const ENV_REGEXP_FEATURE = new EnvRegExp(EnvironmentLabel.FEATURE);
+const ENV_REGEXP_QA = new EnvRegExp(EnvironmentLabel.QA);
 
 /**
  * TODO document
@@ -69,3 +82,5 @@ export function getLabelByName(name: string): EnvironmentLabel {
 export function getCategoryByLabel(label: EnvironmentLabel): EnvironmentCategory {
   return labelToCategory[label];
 }
+
+

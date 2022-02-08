@@ -1,9 +1,10 @@
-import { Account, AccountType, AccountWithEnvironments } from './accounts';
+import { Account } from '@almamedia-open-source/cdk-project-context';
+import { AccountConfiguration, AccountType } from './accounts';
 import { EnvironmentLabel } from './environments';
 
 export interface ProjectAccounts2xProps {
-  readonly [AccountType.DEV]: Account;
-  readonly [AccountType.PROD]: Account;
+  readonly [AccountType.DEV]: AccountConfiguration;
+  readonly [AccountType.PROD]: AccountConfiguration;
 }
 
 /**
@@ -29,9 +30,8 @@ export interface ProjectAccounts2xProps {
  *   },
  * }),
  */
-export class ProjectAccounts2x {
-  readonly [AccountType.DEV]: AccountWithEnvironments;
-  readonly [AccountType.PROD]: AccountWithEnvironments;
+export class ProjectAccounts2x implements Record<string, Account> {
+  [accountType: string]: Account;
 
   constructor(props: ProjectAccounts2xProps) {
     this[AccountType.DEV] = {

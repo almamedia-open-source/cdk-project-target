@@ -1,4 +1,4 @@
-import { EnvironmentLabel } from './environments';
+import { Account } from '@almamedia-open-source/cdk-project-context';
 
 export enum AccountType {
   MOCK='mock',
@@ -8,19 +8,15 @@ export enum AccountType {
   PROD='prod',
 }
 
-export interface Account {
+export interface AccountConfiguration {
   readonly id: string;
   readonly config?: Record<string, any>;
 }
 
-export interface AccountWithEnvironments extends Account {
-  readonly environments: EnvironmentLabel[];
-}
-
 export interface ProjectAccounts {
-  readonly mock?: AccountWithEnvironments;
-  readonly shared?: AccountWithEnvironments;
-  readonly dev?: AccountWithEnvironments;
-  readonly preprod?: AccountWithEnvironments;
-  readonly prod?: AccountWithEnvironments;
+  readonly mock?: Account;
+  readonly shared?: Account;
+  readonly dev?: Account;
+  readonly preprod?: Account;
+  readonly prod?: Account;
 }
