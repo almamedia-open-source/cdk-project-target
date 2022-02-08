@@ -631,6 +631,10 @@ Construct.
 
 ### ProjectAccounts1x <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts1x" id="almamediaopensourcecdkprojecttargetprojectaccounts1x"></a>
 
+Enables single account strategy.
+
+1. `shared` account with environments:     - development     - feature/*     - test     - qaN     - staging     - preproduction     - production
+
 #### Initializers <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts1x.Initializer" id="almamediaopensourcecdkprojecttargetprojectaccounts1xinitializer"></a>
 
 ```typescript
@@ -673,6 +677,10 @@ public readonly shared: AccountWithEnvironments;
 
 
 ### ProjectAccounts2x <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts2x" id="almamediaopensourcecdkprojecttargetprojectaccounts2x"></a>
+
+Enables dual account strategy.
+
+1. `dev` account with environments:     - development     - feature/*     - test     - qaN     - staging 2. `prod` account with environments:     - preproduction     - production
 
 #### Initializers <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts2x.Initializer" id="almamediaopensourcecdkprojecttargetprojectaccounts2xinitializer"></a>
 
@@ -727,6 +735,10 @@ public readonly prod: AccountWithEnvironments;
 
 
 ### ProjectAccounts3x <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts3x" id="almamediaopensourcecdkprojecttargetprojectaccounts3x"></a>
+
+Enables triple account strategy.
+
+1. `dev` account with environments:     - development     - feature/*     - test     - staging 2. `preprod` account with environments:     - qaN     - preproduction 3. `prod` account with environments:     - production
 
 #### Initializers <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts3x.Initializer" id="almamediaopensourcecdkprojecttargetprojectaccounts3xinitializer"></a>
 
