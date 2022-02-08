@@ -2,12 +2,7 @@
   "dependencies": [
     {
       "name": "@almamedia-open-source/cdk-project-context",
-      "version": "v0.0.14",
-      "type": "build"
-    },
-    {
-      "name": "@aws-cdk/assert",
-      "version": "^2.0.0",
+      "version": "0.0.14",
       "type": "build"
     },
     {
@@ -20,7 +15,7 @@
     },
     {
       "name": "@types/node",
-      "version": "^14.17.6",
+      "version": "^14",
       "type": "build"
     },
     {
@@ -35,6 +30,7 @@
     },
     {
       "name": "aws-cdk-lib",
+      "version": "2.0.0",
       "type": "build"
     },
     {
@@ -81,16 +77,12 @@
       "type": "build"
     },
     {
-      "name": "jsii-pacmak",
-      "type": "build"
-    },
-    {
       "name": "json-schema",
       "type": "build"
     },
     {
       "name": "npm-check-updates",
-      "version": "^11",
+      "version": "^12",
       "type": "build"
     },
     {
@@ -121,6 +113,7 @@
     },
     {
       "name": "aws-cdk-lib",
+      "version": "^2.0.0",
       "type": "peer"
     },
     {
