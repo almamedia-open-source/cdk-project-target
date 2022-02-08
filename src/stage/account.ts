@@ -1,8 +1,8 @@
-import { Stage } from 'aws-cdk-lib';
-import { Construct } from 'constructs';
-import { pascalCase } from 'change-case';
-import { AccountContext } from '../context/account';
 import { AccountType } from '@almamedia-open-source/cdk-project-context';
+import { Stage } from 'aws-cdk-lib';
+import { pascalCase } from 'change-case';
+import { Construct } from 'constructs';
+import { AccountContext } from '../context/account';
 
 export interface AccountStageProps {
   accountType: string;
@@ -27,7 +27,7 @@ export class AccountStage extends Stage {
       env: {
         account: accountId,
         region: props?.region,
-      }
+      },
     });
 
     // Ensure no environment access from within Account Construct
@@ -36,6 +36,5 @@ export class AccountStage extends Stage {
     this.node.setContext('env', undefined);
   }
 }
-
 
 

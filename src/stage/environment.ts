@@ -1,10 +1,8 @@
+import { AccountType, EnvironmentType, Project } from '@almamedia-open-source/cdk-project-context';
 import { Stage } from 'aws-cdk-lib';
-import { Construct } from 'constructs';
 import { pascalCase } from 'change-case';
+import { Construct } from 'constructs';
 import { EnvironmentContext } from '../context/environment';
-import { EnvironmentType } from '@almamedia-open-source/cdk-project-context';
-import { AccountType } from '@almamedia-open-source/cdk-project-context';
-import { Project } from '@almamedia-open-source/cdk-project-context';
 
 export interface EnvironmentStageProps {
   environmentType: string;
@@ -21,12 +19,11 @@ export class EnvironmentStage extends Stage {
       const projectConfiguration = Project.getConfiguration(scope);
       const accountType = AccountType.matchFromEnvironment(scope, projectConfiguration.accounts, props.environmentType);
       AccountType.set(scope, accountType);
-      EnvironmentType.set(scope, props.environmentType)
+      EnvironmentType.set(scope, props.environmentType);
     }
 
     super(scope, id, { env: { region: props?.region } });
   }
 }
-
 
 
