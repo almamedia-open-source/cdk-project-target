@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@almamedia-open-source/cdk-project-context@0.0.14":
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/@almamedia-open-source/cdk-project-context/-/cdk-project-context-0.0.14.tgz#9c3c55fc102109ed76fa62444d3aad1b05b0b6f1"
-  integrity sha512-LNwPuTYoGxkx5vxTpZ8T9hiKh0zYvecPxIcuHd8Jxgs1lR8SaAARoHsmmhGdbykuAcm6XA5sNaIyP8vLlUzgEw==
+"@almamedia-open-source/cdk-project-context@0.0.15":
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/@almamedia-open-source/cdk-project-context/-/cdk-project-context-0.0.15.tgz#b7efe4b1f08bfd0b5a7e0dcc2b1259f411195388"
+  integrity sha512-BB1ErLdGQdOyNA4/32MihsMYJY/UHNbtIJuIGGE2kCYAb9/m776ybTNmla60Mf5OF7m3Bu8JOcjhI2aHfKv5vQ==
   dependencies:
     lodash "^4.17.21"
 
