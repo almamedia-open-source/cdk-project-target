@@ -5,8 +5,8 @@ import { Construct } from 'constructs';
 import { EnvironmentContext } from '../context/environment';
 
 export interface EnvironmentStageProps {
-  environmentType: string;
-  region?: string;
+  readonly environmentType: string;
+  readonly region?: string;
 }
 
 export class EnvironmentStage extends Stage {

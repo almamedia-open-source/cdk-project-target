@@ -1,5 +1,5 @@
 import { Project } from '@almamedia-open-source/cdk-project-context';
-import { ProjectAccounts3x } from '../src/configurations/3x';
+import { Accounts } from '../src/configurations/accounts';
 import { dev, preprod, prod } from './mock/accounts';
 import { defaultProject } from './mock/project';
 
@@ -7,7 +7,7 @@ describe('2x', () => {
   test('dev', () => {
     const project = new Project({
       ...defaultProject,
-      accounts: new ProjectAccounts3x({
+      accounts: Accounts.three({
         dev,
         preprod,
         prod,
@@ -28,7 +28,7 @@ describe('2x', () => {
   test('preprod', () => {
     const project = new Project({
       ...defaultProject,
-      accounts: new ProjectAccounts3x({
+      accounts: Accounts.three({
         dev,
         preprod,
         prod,
@@ -44,7 +44,7 @@ describe('2x', () => {
   test('prod', () => {
     const project = new Project({
       ...defaultProject,
-      accounts: new ProjectAccounts3x({
+      accounts: Accounts.three({
         dev,
         preprod,
         prod,

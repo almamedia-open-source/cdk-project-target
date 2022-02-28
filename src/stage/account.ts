@@ -5,8 +5,8 @@ import { Construct } from 'constructs';
 import { AccountContext } from '../context/account';
 
 export interface AccountStageProps {
-  accountType: string;
-  region?: string;
+  readonly accountType: string;
+  readonly region?: string;
 }
 
 export class AccountStage extends Stage {

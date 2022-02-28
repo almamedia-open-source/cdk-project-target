@@ -58,7 +58,7 @@ TODO
     ```ts
     // bin/app.ts
     import { Project } from '@almamedia-open-source/cdk-project-context';
-    import { ProjectAccounts2x } from '@almamedia-open-source/cdk-project-target';
+    import { Accounts } from '@almamedia-open-source/cdk-project-target';
 
     // new Project instead of new App
     const project = new Project({
@@ -69,7 +69,7 @@ TODO
         email: 'mad.scientists@acme.example.com',
       },
       defaultRegion: 'eu-west-1', // defaults to one of: $CDK_DEFAULT_REGION, $AWS_REGION or us-east-1
-      accounts: new ProjectAccounts2x({
+      accounts: Accounts.two({
         dev: {
           id: '111111111111',
           config: {

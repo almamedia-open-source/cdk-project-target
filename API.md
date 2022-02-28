@@ -1,28 +1,95 @@
 # API Reference <a name="API Reference" id="api-reference"></a>
 
+## Constructs <a name="Constructs" id="constructs"></a>
+
+### AccountStage <a name="@almamedia-open-source/cdk-project-target.AccountStage" id="almamediaopensourcecdkprojecttargetaccountstage"></a>
+
+#### Initializers <a name="@almamedia-open-source/cdk-project-target.AccountStage.Initializer" id="almamediaopensourcecdkprojecttargetaccountstageinitializer"></a>
+
+```typescript
+import { AccountStage } from '@almamedia-open-source/cdk-project-target'
+
+new AccountStage(scope: Construct, props?: AccountStageProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#almamediaopensourcecdkprojecttargetaccountstageparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | *No description.* |
+| [`props`](#almamediaopensourcecdkprojecttargetaccountstageparameterprops) | [`@almamedia-open-source/cdk-project-target.AccountStageProps`](#@almamedia-open-source/cdk-project-target.AccountStageProps) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountStage.parameter.scope" id="almamediaopensourcecdkprojecttargetaccountstageparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+---
+
+##### `props`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.AccountStage.parameter.props" id="almamediaopensourcecdkprojecttargetaccountstageparameterprops"></a>
+
+- *Type:* [`@almamedia-open-source/cdk-project-target.AccountStageProps`](#@almamedia-open-source/cdk-project-target.AccountStageProps)
+
+---
+
+
+
+
+
+### EnvironmentStage <a name="@almamedia-open-source/cdk-project-target.EnvironmentStage" id="almamediaopensourcecdkprojecttargetenvironmentstage"></a>
+
+#### Initializers <a name="@almamedia-open-source/cdk-project-target.EnvironmentStage.Initializer" id="almamediaopensourcecdkprojecttargetenvironmentstageinitializer"></a>
+
+```typescript
+import { EnvironmentStage } from '@almamedia-open-source/cdk-project-target'
+
+new EnvironmentStage(scope: Construct, props?: EnvironmentStageProps)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#almamediaopensourcecdkprojecttargetenvironmentstageparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | *No description.* |
+| [`props`](#almamediaopensourcecdkprojecttargetenvironmentstageparameterprops) | [`@almamedia-open-source/cdk-project-target.EnvironmentStageProps`](#@almamedia-open-source/cdk-project-target.EnvironmentStageProps) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentStage.parameter.scope" id="almamediaopensourcecdkprojecttargetenvironmentstageparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+---
+
+##### `props`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentStage.parameter.props" id="almamediaopensourcecdkprojecttargetenvironmentstageparameterprops"></a>
+
+- *Type:* [`@almamedia-open-source/cdk-project-target.EnvironmentStageProps`](#@almamedia-open-source/cdk-project-target.EnvironmentStageProps)
+
+---
+
+
+
+
 
 ## Structs <a name="Structs" id="structs"></a>
 
-### Account <a name="@almamedia-open-source/cdk-project-target.Account" id="almamediaopensourcecdkprojecttargetaccount"></a>
+### AccountConfiguration <a name="@almamedia-open-source/cdk-project-target.AccountConfiguration" id="almamediaopensourcecdkprojecttargetaccountconfiguration"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
 
 ```typescript
-import { Account } from '@almamedia-open-source/cdk-project-target'
+import { AccountConfiguration } from '@almamedia-open-source/cdk-project-target'
 
-const account: Account = { ... }
+const accountConfiguration: AccountConfiguration = { ... }
 ```
 
 #### Properties <a name="Properties" id="properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`id`](#almamediaopensourcecdkprojecttargetaccountpropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`config`](#almamediaopensourcecdkprojecttargetaccountpropertyconfig) | {[ key: string ]: `any`} | *No description.* |
+| [`id`](#almamediaopensourcecdkprojecttargetaccountconfigurationpropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`config`](#almamediaopensourcecdkprojecttargetaccountconfigurationpropertyconfig) | {[ key: string ]: `any`} | *No description.* |
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.Account.property.id" id="almamediaopensourcecdkprojecttargetaccountpropertyid"></a>
+##### `id`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountConfiguration.property.id" id="almamediaopensourcecdkprojecttargetaccountconfigurationpropertyid"></a>
 
 ```typescript
 public readonly id: string;
@@ -32,7 +99,7 @@ public readonly id: string;
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.Account.property.config" id="almamediaopensourcecdkprojecttargetaccountpropertyconfig"></a>
+##### `config`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.AccountConfiguration.property.config" id="almamediaopensourcecdkprojecttargetaccountconfigurationpropertyconfig"></a>
 
 ```typescript
 public readonly config: {[ key: string ]: any};
@@ -42,53 +109,198 @@ public readonly config: {[ key: string ]: any};
 
 ---
 
-### AccountWithEnvironments <a name="@almamedia-open-source/cdk-project-target.AccountWithEnvironments" id="almamediaopensourcecdkprojecttargetaccountwithenvironments"></a>
+### AccountsOneProps <a name="@almamedia-open-source/cdk-project-target.AccountsOneProps" id="almamediaopensourcecdkprojecttargetaccountsoneprops"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
 
 ```typescript
-import { AccountWithEnvironments } from '@almamedia-open-source/cdk-project-target'
+import { AccountsOneProps } from '@almamedia-open-source/cdk-project-target'
 
-const accountWithEnvironments: AccountWithEnvironments = { ... }
+const accountsOneProps: AccountsOneProps = { ... }
 ```
 
 #### Properties <a name="Properties" id="properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`id`](#almamediaopensourcecdkprojecttargetaccountwithenvironmentspropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`config`](#almamediaopensourcecdkprojecttargetaccountwithenvironmentspropertyconfig) | {[ key: string ]: `any`} | *No description.* |
-| [`environments`](#almamediaopensourcecdkprojecttargetaccountwithenvironmentspropertyenvironments)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.EnvironmentLabel`](#@almamedia-open-source/cdk-project-target.EnvironmentLabel)[] | *No description.* |
+| [`shared`](#almamediaopensourcecdkprojecttargetaccountsonepropspropertyshared)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration) | *No description.* |
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountWithEnvironments.property.id" id="almamediaopensourcecdkprojecttargetaccountwithenvironmentspropertyid"></a>
+##### `shared`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountsOneProps.property.shared" id="almamediaopensourcecdkprojecttargetaccountsonepropspropertyshared"></a>
 
 ```typescript
-public readonly id: string;
+public readonly shared: AccountConfiguration;
+```
+
+- *Type:* [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration)
+
+---
+
+### AccountStageProps <a name="@almamedia-open-source/cdk-project-target.AccountStageProps" id="almamediaopensourcecdkprojecttargetaccountstageprops"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { AccountStageProps } from '@almamedia-open-source/cdk-project-target'
+
+const accountStageProps: AccountStageProps = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`accountType`](#almamediaopensourcecdkprojecttargetaccountstagepropspropertyaccounttype)<span title="Required">*</span> | `string` | *No description.* |
+| [`region`](#almamediaopensourcecdkprojecttargetaccountstagepropspropertyregion) | `string` | *No description.* |
+
+---
+
+##### `accountType`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountStageProps.property.accountType" id="almamediaopensourcecdkprojecttargetaccountstagepropspropertyaccounttype"></a>
+
+```typescript
+public readonly accountType: string;
 ```
 
 - *Type:* `string`
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.AccountWithEnvironments.property.config" id="almamediaopensourcecdkprojecttargetaccountwithenvironmentspropertyconfig"></a>
+##### `region`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.AccountStageProps.property.region" id="almamediaopensourcecdkprojecttargetaccountstagepropspropertyregion"></a>
 
 ```typescript
-public readonly config: {[ key: string ]: any};
+public readonly region: string;
 ```
 
-- *Type:* {[ key: string ]: `any`}
+- *Type:* `string`
 
 ---
 
-##### `environments`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountWithEnvironments.property.environments" id="almamediaopensourcecdkprojecttargetaccountwithenvironmentspropertyenvironments"></a>
+### AccountsTwoProps <a name="@almamedia-open-source/cdk-project-target.AccountsTwoProps" id="almamediaopensourcecdkprojecttargetaccountstwoprops"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
 
 ```typescript
-public readonly environments: EnvironmentLabel[];
+import { AccountsTwoProps } from '@almamedia-open-source/cdk-project-target'
+
+const accountsTwoProps: AccountsTwoProps = { ... }
 ```
 
-- *Type:* [`@almamedia-open-source/cdk-project-target.EnvironmentLabel`](#@almamedia-open-source/cdk-project-target.EnvironmentLabel)[]
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`dev`](#almamediaopensourcecdkprojecttargetaccountstwopropspropertydev)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration) | *No description.* |
+| [`prod`](#almamediaopensourcecdkprojecttargetaccountstwopropspropertyprod)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration) | *No description.* |
+
+---
+
+##### `dev`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountsTwoProps.property.dev" id="almamediaopensourcecdkprojecttargetaccountstwopropspropertydev"></a>
+
+```typescript
+public readonly dev: AccountConfiguration;
+```
+
+- *Type:* [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration)
+
+---
+
+##### `prod`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountsTwoProps.property.prod" id="almamediaopensourcecdkprojecttargetaccountstwopropspropertyprod"></a>
+
+```typescript
+public readonly prod: AccountConfiguration;
+```
+
+- *Type:* [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration)
+
+---
+
+### AccountThreeProps <a name="@almamedia-open-source/cdk-project-target.AccountThreeProps" id="almamediaopensourcecdkprojecttargetaccountthreeprops"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { AccountThreeProps } from '@almamedia-open-source/cdk-project-target'
+
+const accountThreeProps: AccountThreeProps = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`dev`](#almamediaopensourcecdkprojecttargetaccountthreepropspropertydev)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration) | *No description.* |
+| [`preprod`](#almamediaopensourcecdkprojecttargetaccountthreepropspropertypreprod)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration) | *No description.* |
+| [`prod`](#almamediaopensourcecdkprojecttargetaccountthreepropspropertyprod)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration) | *No description.* |
+
+---
+
+##### `dev`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountThreeProps.property.dev" id="almamediaopensourcecdkprojecttargetaccountthreepropspropertydev"></a>
+
+```typescript
+public readonly dev: AccountConfiguration;
+```
+
+- *Type:* [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration)
+
+---
+
+##### `preprod`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountThreeProps.property.preprod" id="almamediaopensourcecdkprojecttargetaccountthreepropspropertypreprod"></a>
+
+```typescript
+public readonly preprod: AccountConfiguration;
+```
+
+- *Type:* [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration)
+
+---
+
+##### `prod`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountThreeProps.property.prod" id="almamediaopensourcecdkprojecttargetaccountthreepropspropertyprod"></a>
+
+```typescript
+public readonly prod: AccountConfiguration;
+```
+
+- *Type:* [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration)
+
+---
+
+### EnvironmentStageProps <a name="@almamedia-open-source/cdk-project-target.EnvironmentStageProps" id="almamediaopensourcecdkprojecttargetenvironmentstageprops"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { EnvironmentStageProps } from '@almamedia-open-source/cdk-project-target'
+
+const environmentStageProps: EnvironmentStageProps = { ... }
+```
+
+#### Properties <a name="Properties" id="properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`environmentType`](#almamediaopensourcecdkprojecttargetenvironmentstagepropspropertyenvironmenttype)<span title="Required">*</span> | `string` | *No description.* |
+| [`region`](#almamediaopensourcecdkprojecttargetenvironmentstagepropspropertyregion) | `string` | *No description.* |
+
+---
+
+##### `environmentType`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentStageProps.property.environmentType" id="almamediaopensourcecdkprojecttargetenvironmentstagepropspropertyenvironmenttype"></a>
+
+```typescript
+public readonly environmentType: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `region`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentStageProps.property.region" id="almamediaopensourcecdkprojecttargetenvironmentstagepropspropertyregion"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -106,178 +318,61 @@ const projectAccounts: ProjectAccounts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`dev`](#almamediaopensourcecdkprojecttargetprojectaccountspropertydev) | [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments) | *No description.* |
-| [`mock`](#almamediaopensourcecdkprojecttargetprojectaccountspropertymock) | [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments) | *No description.* |
-| [`preprod`](#almamediaopensourcecdkprojecttargetprojectaccountspropertypreprod) | [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments) | *No description.* |
-| [`prod`](#almamediaopensourcecdkprojecttargetprojectaccountspropertyprod) | [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments) | *No description.* |
-| [`shared`](#almamediaopensourcecdkprojecttargetprojectaccountspropertyshared) | [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments) | *No description.* |
+| [`dev`](#almamediaopensourcecdkprojecttargetprojectaccountspropertydev) | [`@almamedia-open-source/cdk-project-context.Account`](#@almamedia-open-source/cdk-project-context.Account) | *No description.* |
+| [`mock`](#almamediaopensourcecdkprojecttargetprojectaccountspropertymock) | [`@almamedia-open-source/cdk-project-context.Account`](#@almamedia-open-source/cdk-project-context.Account) | *No description.* |
+| [`preprod`](#almamediaopensourcecdkprojecttargetprojectaccountspropertypreprod) | [`@almamedia-open-source/cdk-project-context.Account`](#@almamedia-open-source/cdk-project-context.Account) | *No description.* |
+| [`prod`](#almamediaopensourcecdkprojecttargetprojectaccountspropertyprod) | [`@almamedia-open-source/cdk-project-context.Account`](#@almamedia-open-source/cdk-project-context.Account) | *No description.* |
+| [`shared`](#almamediaopensourcecdkprojecttargetprojectaccountspropertyshared) | [`@almamedia-open-source/cdk-project-context.Account`](#@almamedia-open-source/cdk-project-context.Account) | *No description.* |
 
 ---
 
 ##### `dev`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts.property.dev" id="almamediaopensourcecdkprojecttargetprojectaccountspropertydev"></a>
 
 ```typescript
-public readonly dev: AccountWithEnvironments;
+public readonly dev: Account;
 ```
 
-- *Type:* [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments)
+- *Type:* [`@almamedia-open-source/cdk-project-context.Account`](#@almamedia-open-source/cdk-project-context.Account)
 
 ---
 
 ##### `mock`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts.property.mock" id="almamediaopensourcecdkprojecttargetprojectaccountspropertymock"></a>
 
 ```typescript
-public readonly mock: AccountWithEnvironments;
+public readonly mock: Account;
 ```
 
-- *Type:* [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments)
+- *Type:* [`@almamedia-open-source/cdk-project-context.Account`](#@almamedia-open-source/cdk-project-context.Account)
 
 ---
 
 ##### `preprod`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts.property.preprod" id="almamediaopensourcecdkprojecttargetprojectaccountspropertypreprod"></a>
 
 ```typescript
-public readonly preprod: AccountWithEnvironments;
+public readonly preprod: Account;
 ```
 
-- *Type:* [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments)
+- *Type:* [`@almamedia-open-source/cdk-project-context.Account`](#@almamedia-open-source/cdk-project-context.Account)
 
 ---
 
 ##### `prod`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts.property.prod" id="almamediaopensourcecdkprojecttargetprojectaccountspropertyprod"></a>
 
 ```typescript
-public readonly prod: AccountWithEnvironments;
+public readonly prod: Account;
 ```
 
-- *Type:* [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments)
+- *Type:* [`@almamedia-open-source/cdk-project-context.Account`](#@almamedia-open-source/cdk-project-context.Account)
 
 ---
 
 ##### `shared`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts.property.shared" id="almamediaopensourcecdkprojecttargetprojectaccountspropertyshared"></a>
 
 ```typescript
-public readonly shared: AccountWithEnvironments;
-```
-
-- *Type:* [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments)
-
----
-
-### ProjectAccounts1xProps <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts1xProps" id="almamediaopensourcecdkprojecttargetprojectaccounts1xprops"></a>
-
-#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
-
-```typescript
-import { ProjectAccounts1xProps } from '@almamedia-open-source/cdk-project-target'
-
-const projectAccounts1xProps: ProjectAccounts1xProps = { ... }
-```
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`shared`](#almamediaopensourcecdkprojecttargetprojectaccounts1xpropspropertyshared)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.Account`](#@almamedia-open-source/cdk-project-target.Account) | *No description.* |
-
----
-
-##### `shared`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts1xProps.property.shared" id="almamediaopensourcecdkprojecttargetprojectaccounts1xpropspropertyshared"></a>
-
-```typescript
 public readonly shared: Account;
 ```
 
-- *Type:* [`@almamedia-open-source/cdk-project-target.Account`](#@almamedia-open-source/cdk-project-target.Account)
-
----
-
-### ProjectAccounts2xProps <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts2xProps" id="almamediaopensourcecdkprojecttargetprojectaccounts2xprops"></a>
-
-#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
-
-```typescript
-import { ProjectAccounts2xProps } from '@almamedia-open-source/cdk-project-target'
-
-const projectAccounts2xProps: ProjectAccounts2xProps = { ... }
-```
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`dev`](#almamediaopensourcecdkprojecttargetprojectaccounts2xpropspropertydev)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.Account`](#@almamedia-open-source/cdk-project-target.Account) | *No description.* |
-| [`prod`](#almamediaopensourcecdkprojecttargetprojectaccounts2xpropspropertyprod)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.Account`](#@almamedia-open-source/cdk-project-target.Account) | *No description.* |
-
----
-
-##### `dev`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts2xProps.property.dev" id="almamediaopensourcecdkprojecttargetprojectaccounts2xpropspropertydev"></a>
-
-```typescript
-public readonly dev: Account;
-```
-
-- *Type:* [`@almamedia-open-source/cdk-project-target.Account`](#@almamedia-open-source/cdk-project-target.Account)
-
----
-
-##### `prod`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts2xProps.property.prod" id="almamediaopensourcecdkprojecttargetprojectaccounts2xpropspropertyprod"></a>
-
-```typescript
-public readonly prod: Account;
-```
-
-- *Type:* [`@almamedia-open-source/cdk-project-target.Account`](#@almamedia-open-source/cdk-project-target.Account)
-
----
-
-### ProjectAccounts3xProps <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts3xProps" id="almamediaopensourcecdkprojecttargetprojectaccounts3xprops"></a>
-
-#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
-
-```typescript
-import { ProjectAccounts3xProps } from '@almamedia-open-source/cdk-project-target'
-
-const projectAccounts3xProps: ProjectAccounts3xProps = { ... }
-```
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`dev`](#almamediaopensourcecdkprojecttargetprojectaccounts3xpropspropertydev)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.Account`](#@almamedia-open-source/cdk-project-target.Account) | *No description.* |
-| [`preprod`](#almamediaopensourcecdkprojecttargetprojectaccounts3xpropspropertypreprod)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.Account`](#@almamedia-open-source/cdk-project-target.Account) | *No description.* |
-| [`prod`](#almamediaopensourcecdkprojecttargetprojectaccounts3xpropspropertyprod)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.Account`](#@almamedia-open-source/cdk-project-target.Account) | *No description.* |
-
----
-
-##### `dev`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts3xProps.property.dev" id="almamediaopensourcecdkprojecttargetprojectaccounts3xpropspropertydev"></a>
-
-```typescript
-public readonly dev: Account;
-```
-
-- *Type:* [`@almamedia-open-source/cdk-project-target.Account`](#@almamedia-open-source/cdk-project-target.Account)
-
----
-
-##### `preprod`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts3xProps.property.preprod" id="almamediaopensourcecdkprojecttargetprojectaccounts3xpropspropertypreprod"></a>
-
-```typescript
-public readonly preprod: Account;
-```
-
-- *Type:* [`@almamedia-open-source/cdk-project-target.Account`](#@almamedia-open-source/cdk-project-target.Account)
-
----
-
-##### `prod`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts3xProps.property.prod" id="almamediaopensourcecdkprojecttargetprojectaccounts3xpropspropertyprod"></a>
-
-```typescript
-public readonly prod: Account;
-```
-
-- *Type:* [`@almamedia-open-source/cdk-project-target.Account`](#@almamedia-open-source/cdk-project-target.Account)
+- *Type:* [`@almamedia-open-source/cdk-project-context.Account`](#@almamedia-open-source/cdk-project-context.Account)
 
 ---
 
@@ -429,6 +524,76 @@ AccountContext.isShared(scope: Construct)
 ###### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountContext.parameter.scope" id="almamediaopensourcecdkprojecttargetaccountcontextparameterscope"></a>
 
 - *Type:* [`constructs.Construct`](#constructs.Construct)
+
+---
+
+
+
+### Accounts <a name="@almamedia-open-source/cdk-project-target.Accounts" id="almamediaopensourcecdkprojecttargetaccounts"></a>
+
+#### Initializers <a name="@almamedia-open-source/cdk-project-target.Accounts.Initializer" id="almamediaopensourcecdkprojecttargetaccountsinitializer"></a>
+
+```typescript
+import { Accounts } from '@almamedia-open-source/cdk-project-target'
+
+new Accounts()
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+
+---
+
+
+#### Static Functions <a name="Static Functions" id="static-functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`one`](#almamediaopensourcecdkprojecttargetaccountsone) | Enables single account strategy. |
+| [`three`](#almamediaopensourcecdkprojecttargetaccountsthree) | Enables triple account strategy. |
+| [`two`](#almamediaopensourcecdkprojecttargetaccountstwo) | Enables dual account strategy. |
+
+---
+
+##### `one` <a name="@almamedia-open-source/cdk-project-target.Accounts.one" id="almamediaopensourcecdkprojecttargetaccountsone"></a>
+
+```typescript
+import { Accounts } from '@almamedia-open-source/cdk-project-target'
+
+Accounts.one(props: AccountsOneProps)
+```
+
+###### `props`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.Accounts.parameter.props" id="almamediaopensourcecdkprojecttargetaccountsparameterprops"></a>
+
+- *Type:* [`@almamedia-open-source/cdk-project-target.AccountsOneProps`](#@almamedia-open-source/cdk-project-target.AccountsOneProps)
+
+---
+
+##### `three` <a name="@almamedia-open-source/cdk-project-target.Accounts.three" id="almamediaopensourcecdkprojecttargetaccountsthree"></a>
+
+```typescript
+import { Accounts } from '@almamedia-open-source/cdk-project-target'
+
+Accounts.three(props: AccountThreeProps)
+```
+
+###### `props`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.Accounts.parameter.props" id="almamediaopensourcecdkprojecttargetaccountsparameterprops"></a>
+
+- *Type:* [`@almamedia-open-source/cdk-project-target.AccountThreeProps`](#@almamedia-open-source/cdk-project-target.AccountThreeProps)
+
+---
+
+##### `two` <a name="@almamedia-open-source/cdk-project-target.Accounts.two" id="almamediaopensourcecdkprojecttargetaccountstwo"></a>
+
+```typescript
+import { Accounts } from '@almamedia-open-source/cdk-project-target'
+
+Accounts.two(props: AccountsTwoProps)
+```
+
+###### `props`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.Accounts.parameter.props" id="almamediaopensourcecdkprojecttargetaccountsparameterprops"></a>
+
+- *Type:* [`@almamedia-open-source/cdk-project-target.AccountsTwoProps`](#@almamedia-open-source/cdk-project-target.AccountsTwoProps)
 
 ---
 
@@ -627,180 +792,6 @@ Construct.
 
 ---
 
-
-
-### ProjectAccounts1x <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts1x" id="almamediaopensourcecdkprojecttargetprojectaccounts1x"></a>
-
-Enables single account strategy.
-
-1. `shared` account with environments:     - development     - feature/*     - test     - qaN     - staging     - preproduction     - production
-
-#### Initializers <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts1x.Initializer" id="almamediaopensourcecdkprojecttargetprojectaccounts1xinitializer"></a>
-
-```typescript
-import { ProjectAccounts1x } from '@almamedia-open-source/cdk-project-target'
-
-new ProjectAccounts1x(props: ProjectAccounts1xProps)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`props`](#almamediaopensourcecdkprojecttargetprojectaccounts1xparameterprops)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.ProjectAccounts1xProps`](#@almamedia-open-source/cdk-project-target.ProjectAccounts1xProps) | *No description.* |
-
----
-
-##### `props`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts1x.parameter.props" id="almamediaopensourcecdkprojecttargetprojectaccounts1xparameterprops"></a>
-
-- *Type:* [`@almamedia-open-source/cdk-project-target.ProjectAccounts1xProps`](#@almamedia-open-source/cdk-project-target.ProjectAccounts1xProps)
-
----
-
-
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`shared`](#almamediaopensourcecdkprojecttargetprojectaccounts1xpropertyshared)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments) | *No description.* |
-
----
-
-##### `shared`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts1x.property.shared" id="almamediaopensourcecdkprojecttargetprojectaccounts1xpropertyshared"></a>
-
-```typescript
-public readonly shared: AccountWithEnvironments;
-```
-
-- *Type:* [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments)
-
----
-
-
-### ProjectAccounts2x <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts2x" id="almamediaopensourcecdkprojecttargetprojectaccounts2x"></a>
-
-Enables dual account strategy.
-
-1. `dev` account with environments:     - development     - feature/*     - test     - qaN     - staging 2. `prod` account with environments:     - preproduction     - production
-
-#### Initializers <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts2x.Initializer" id="almamediaopensourcecdkprojecttargetprojectaccounts2xinitializer"></a>
-
-```typescript
-import { ProjectAccounts2x } from '@almamedia-open-source/cdk-project-target'
-
-new ProjectAccounts2x(props: ProjectAccounts2xProps)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`props`](#almamediaopensourcecdkprojecttargetprojectaccounts2xparameterprops)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.ProjectAccounts2xProps`](#@almamedia-open-source/cdk-project-target.ProjectAccounts2xProps) | *No description.* |
-
----
-
-##### `props`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts2x.parameter.props" id="almamediaopensourcecdkprojecttargetprojectaccounts2xparameterprops"></a>
-
-- *Type:* [`@almamedia-open-source/cdk-project-target.ProjectAccounts2xProps`](#@almamedia-open-source/cdk-project-target.ProjectAccounts2xProps)
-
----
-
-
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`dev`](#almamediaopensourcecdkprojecttargetprojectaccounts2xpropertydev)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments) | *No description.* |
-| [`prod`](#almamediaopensourcecdkprojecttargetprojectaccounts2xpropertyprod)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments) | *No description.* |
-
----
-
-##### `dev`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts2x.property.dev" id="almamediaopensourcecdkprojecttargetprojectaccounts2xpropertydev"></a>
-
-```typescript
-public readonly dev: AccountWithEnvironments;
-```
-
-- *Type:* [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments)
-
----
-
-##### `prod`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts2x.property.prod" id="almamediaopensourcecdkprojecttargetprojectaccounts2xpropertyprod"></a>
-
-```typescript
-public readonly prod: AccountWithEnvironments;
-```
-
-- *Type:* [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments)
-
----
-
-
-### ProjectAccounts3x <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts3x" id="almamediaopensourcecdkprojecttargetprojectaccounts3x"></a>
-
-Enables triple account strategy.
-
-1. `dev` account with environments:     - development     - feature/*     - test     - staging 2. `preprod` account with environments:     - qaN     - preproduction 3. `prod` account with environments:     - production
-
-#### Initializers <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts3x.Initializer" id="almamediaopensourcecdkprojecttargetprojectaccounts3xinitializer"></a>
-
-```typescript
-import { ProjectAccounts3x } from '@almamedia-open-source/cdk-project-target'
-
-new ProjectAccounts3x(props: ProjectAccounts3xProps)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`props`](#almamediaopensourcecdkprojecttargetprojectaccounts3xparameterprops)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.ProjectAccounts3xProps`](#@almamedia-open-source/cdk-project-target.ProjectAccounts3xProps) | *No description.* |
-
----
-
-##### `props`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts3x.parameter.props" id="almamediaopensourcecdkprojecttargetprojectaccounts3xparameterprops"></a>
-
-- *Type:* [`@almamedia-open-source/cdk-project-target.ProjectAccounts3xProps`](#@almamedia-open-source/cdk-project-target.ProjectAccounts3xProps)
-
----
-
-
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`dev`](#almamediaopensourcecdkprojecttargetprojectaccounts3xpropertydev)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments) | *No description.* |
-| [`preprod`](#almamediaopensourcecdkprojecttargetprojectaccounts3xpropertypreprod)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments) | *No description.* |
-| [`prod`](#almamediaopensourcecdkprojecttargetprojectaccounts3xpropertyprod)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments) | *No description.* |
-
----
-
-##### `dev`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts3x.property.dev" id="almamediaopensourcecdkprojecttargetprojectaccounts3xpropertydev"></a>
-
-```typescript
-public readonly dev: AccountWithEnvironments;
-```
-
-- *Type:* [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments)
-
----
-
-##### `preprod`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts3x.property.preprod" id="almamediaopensourcecdkprojecttargetprojectaccounts3xpropertypreprod"></a>
-
-```typescript
-public readonly preprod: AccountWithEnvironments;
-```
-
-- *Type:* [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments)
-
----
-
-##### `prod`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.ProjectAccounts3x.property.prod" id="almamediaopensourcecdkprojecttargetprojectaccounts3xpropertyprod"></a>
-
-```typescript
-public readonly prod: AccountWithEnvironments;
-```
-
-- *Type:* [`@almamedia-open-source/cdk-project-target.AccountWithEnvironments`](#@almamedia-open-source/cdk-project-target.AccountWithEnvironments)
-
----
 
 
 
