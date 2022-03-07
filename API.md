@@ -2,6 +2,32 @@
 
 ## Constructs <a name="Constructs" id="constructs"></a>
 
+### AccountConstruct <a name="@almamedia-open-source/cdk-project-target.AccountConstruct" id="almamediaopensourcecdkprojecttargetaccountconstruct"></a>
+
+#### Initializers <a name="@almamedia-open-source/cdk-project-target.AccountConstruct.Initializer" id="almamediaopensourcecdkprojecttargetaccountconstructinitializer"></a>
+
+```typescript
+import { AccountConstruct } from '@almamedia-open-source/cdk-project-target'
+
+new AccountConstruct(scope: Construct)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#almamediaopensourcecdkprojecttargetaccountconstructparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountConstruct.parameter.scope" id="almamediaopensourcecdkprojecttargetaccountconstructparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+---
+
+
+
+
+
 ### AccountStage <a name="@almamedia-open-source/cdk-project-target.AccountStage" id="almamediaopensourcecdkprojecttargetaccountstage"></a>
 
 #### Initializers <a name="@almamedia-open-source/cdk-project-target.AccountStage.Initializer" id="almamediaopensourcecdkprojecttargetaccountstageinitializer"></a>
@@ -28,6 +54,32 @@ new AccountStage(scope: Construct, props?: AccountStageProps)
 ##### `props`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.AccountStage.parameter.props" id="almamediaopensourcecdkprojecttargetaccountstageparameterprops"></a>
 
 - *Type:* [`@almamedia-open-source/cdk-project-target.AccountStageProps`](#@almamedia-open-source/cdk-project-target.AccountStageProps)
+
+---
+
+
+
+
+
+### EnvironmentConstruct <a name="@almamedia-open-source/cdk-project-target.EnvironmentConstruct" id="almamediaopensourcecdkprojecttargetenvironmentconstruct"></a>
+
+#### Initializers <a name="@almamedia-open-source/cdk-project-target.EnvironmentConstruct.Initializer" id="almamediaopensourcecdkprojecttargetenvironmentconstructinitializer"></a>
+
+```typescript
+import { EnvironmentConstruct } from '@almamedia-open-source/cdk-project-target'
+
+new EnvironmentConstruct(scope: Construct)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`scope`](#almamediaopensourcecdkprojecttargetenvironmentconstructparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentConstruct.parameter.scope" id="almamediaopensourcecdkprojecttargetenvironmentconstructparameterscope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
 
 ---
 
