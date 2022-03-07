@@ -26,4 +26,12 @@ export class EnvironmentStage extends Stage {
   }
 }
 
+export class EnvironmentConstruct extends Construct {
+  constructor(scope: Construct) {
+    const type = EnvironmentContext.getName(scope);
+    const id = `${pascalCase(type)}Environment`;
+    super(scope, id);
+  }
+}
+
 
