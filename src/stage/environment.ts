@@ -9,6 +9,10 @@ export interface EnvironmentStageProps {
   readonly region?: string;
 }
 
+/**
+ * Doesn't seem to work as expected.
+ * @deprecated
+ */
 export class EnvironmentStage extends Stage {
   constructor(scope: Construct, props?: EnvironmentStageProps) {
     const type = EnvironmentContext.getName(scope);

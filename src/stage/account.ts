@@ -9,6 +9,10 @@ export interface AccountStageProps {
   readonly region?: string;
 }
 
+/**
+ * Doesn't seem to work as expected.
+ * @deprecated
+ */
 export class AccountStage extends Stage {
 
   constructor(scope: Construct, props?: AccountStageProps) {
