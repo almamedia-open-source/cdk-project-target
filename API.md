@@ -28,39 +28,6 @@ new AccountConstruct(scope: Construct)
 
 
 
-### AccountStage <a name="@almamedia-open-source/cdk-project-target.AccountStage" id="almamediaopensourcecdkprojecttargetaccountstage"></a>
-
-#### Initializers <a name="@almamedia-open-source/cdk-project-target.AccountStage.Initializer" id="almamediaopensourcecdkprojecttargetaccountstageinitializer"></a>
-
-```typescript
-import { AccountStage } from '@almamedia-open-source/cdk-project-target'
-
-new AccountStage(scope: Construct, props?: AccountStageProps)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`scope`](#almamediaopensourcecdkprojecttargetaccountstageparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | *No description.* |
-| [`props`](#almamediaopensourcecdkprojecttargetaccountstageparameterprops) | [`@almamedia-open-source/cdk-project-target.AccountStageProps`](#@almamedia-open-source/cdk-project-target.AccountStageProps) | *No description.* |
-
----
-
-##### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountStage.parameter.scope" id="almamediaopensourcecdkprojecttargetaccountstageparameterscope"></a>
-
-- *Type:* [`constructs.Construct`](#constructs.Construct)
-
----
-
-##### `props`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.AccountStage.parameter.props" id="almamediaopensourcecdkprojecttargetaccountstageparameterprops"></a>
-
-- *Type:* [`@almamedia-open-source/cdk-project-target.AccountStageProps`](#@almamedia-open-source/cdk-project-target.AccountStageProps)
-
----
-
-
-
-
-
 ### EnvironmentConstruct <a name="@almamedia-open-source/cdk-project-target.EnvironmentConstruct" id="almamediaopensourcecdkprojecttargetenvironmentconstruct"></a>
 
 #### Initializers <a name="@almamedia-open-source/cdk-project-target.EnvironmentConstruct.Initializer" id="almamediaopensourcecdkprojecttargetenvironmentconstructinitializer"></a>
@@ -80,39 +47,6 @@ new EnvironmentConstruct(scope: Construct)
 ##### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentConstruct.parameter.scope" id="almamediaopensourcecdkprojecttargetenvironmentconstructparameterscope"></a>
 
 - *Type:* [`constructs.Construct`](#constructs.Construct)
-
----
-
-
-
-
-
-### EnvironmentStage <a name="@almamedia-open-source/cdk-project-target.EnvironmentStage" id="almamediaopensourcecdkprojecttargetenvironmentstage"></a>
-
-#### Initializers <a name="@almamedia-open-source/cdk-project-target.EnvironmentStage.Initializer" id="almamediaopensourcecdkprojecttargetenvironmentstageinitializer"></a>
-
-```typescript
-import { EnvironmentStage } from '@almamedia-open-source/cdk-project-target'
-
-new EnvironmentStage(scope: Construct, props?: EnvironmentStageProps)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`scope`](#almamediaopensourcecdkprojecttargetenvironmentstageparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | *No description.* |
-| [`props`](#almamediaopensourcecdkprojecttargetenvironmentstageparameterprops) | [`@almamedia-open-source/cdk-project-target.EnvironmentStageProps`](#@almamedia-open-source/cdk-project-target.EnvironmentStageProps) | *No description.* |
-
----
-
-##### `scope`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentStage.parameter.scope" id="almamediaopensourcecdkprojecttargetenvironmentstageparameterscope"></a>
-
-- *Type:* [`constructs.Construct`](#constructs.Construct)
-
----
-
-##### `props`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentStage.parameter.props" id="almamediaopensourcecdkprojecttargetenvironmentstageparameterprops"></a>
-
-- *Type:* [`@almamedia-open-source/cdk-project-target.EnvironmentStageProps`](#@almamedia-open-source/cdk-project-target.EnvironmentStageProps)
 
 ---
 
@@ -197,45 +131,6 @@ public readonly mock: AccountConfiguration;
 ```
 
 - *Type:* [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration)
-
----
-
-### AccountStageProps <a name="@almamedia-open-source/cdk-project-target.AccountStageProps" id="almamediaopensourcecdkprojecttargetaccountstageprops"></a>
-
-#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
-
-```typescript
-import { AccountStageProps } from '@almamedia-open-source/cdk-project-target'
-
-const accountStageProps: AccountStageProps = { ... }
-```
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`accountType`](#almamediaopensourcecdkprojecttargetaccountstagepropspropertyaccounttype)<span title="Required">*</span> | `string` | *No description.* |
-| [`region`](#almamediaopensourcecdkprojecttargetaccountstagepropspropertyregion) | `string` | *No description.* |
-
----
-
-##### `accountType`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.AccountStageProps.property.accountType" id="almamediaopensourcecdkprojecttargetaccountstagepropspropertyaccounttype"></a>
-
-```typescript
-public readonly accountType: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `region`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.AccountStageProps.property.region" id="almamediaopensourcecdkprojecttargetaccountstagepropspropertyregion"></a>
-
-```typescript
-public readonly region: string;
-```
-
-- *Type:* `string`
 
 ---
 
@@ -347,45 +242,6 @@ public readonly mock: AccountConfiguration;
 ```
 
 - *Type:* [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration)
-
----
-
-### EnvironmentStageProps <a name="@almamedia-open-source/cdk-project-target.EnvironmentStageProps" id="almamediaopensourcecdkprojecttargetenvironmentstageprops"></a>
-
-#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
-
-```typescript
-import { EnvironmentStageProps } from '@almamedia-open-source/cdk-project-target'
-
-const environmentStageProps: EnvironmentStageProps = { ... }
-```
-
-#### Properties <a name="Properties" id="properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| [`environmentType`](#almamediaopensourcecdkprojecttargetenvironmentstagepropspropertyenvironmenttype)<span title="Required">*</span> | `string` | *No description.* |
-| [`region`](#almamediaopensourcecdkprojecttargetenvironmentstagepropspropertyregion) | `string` | *No description.* |
-
----
-
-##### `environmentType`<sup>Required</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentStageProps.property.environmentType" id="almamediaopensourcecdkprojecttargetenvironmentstagepropspropertyenvironmenttype"></a>
-
-```typescript
-public readonly environmentType: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `region`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.EnvironmentStageProps.property.region" id="almamediaopensourcecdkprojecttargetenvironmentstagepropspropertyregion"></a>
-
-```typescript
-public readonly region: string;
-```
-
-- *Type:* `string`
 
 ---
 
