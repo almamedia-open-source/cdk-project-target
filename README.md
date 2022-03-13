@@ -47,11 +47,11 @@ TODO
 
 ## Usage
 
-1. Initialize your CDK App with `Project` construct as documented in [`@almamedia-open-source/cdk-project-context`](https://github.com/almamedia-open-source/cdk-project-context) but also use one of the following classes:
+1. Initialize your CDK App with `Project` construct as documented in [`@almamedia-open-source/cdk-project-context`](https://github.com/almamedia-open-source/cdk-project-context) but also use one of the following methods of `Accounts` class:
 
-    - `ProjectAccounts1x`
-    - `ProjectAccounts2x`
-    - `ProjectAccounts3x`
+    - `Accounts.one`
+    - `Accounts.two`
+    - `Accounts.three`
 
     <br>
 
