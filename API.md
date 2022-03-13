@@ -176,6 +176,7 @@ const accountsOneProps: AccountsOneProps = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`shared`](#almamediaopensourcecdkprojecttargetaccountsonepropspropertyshared)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration) | *No description.* |
+| [`mock`](#almamediaopensourcecdkprojecttargetaccountsonepropspropertymock) | [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration) | *No description.* |
 
 ---
 
@@ -183,6 +184,16 @@ const accountsOneProps: AccountsOneProps = { ... }
 
 ```typescript
 public readonly shared: AccountConfiguration;
+```
+
+- *Type:* [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration)
+
+---
+
+##### `mock`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.AccountsOneProps.property.mock" id="almamediaopensourcecdkprojecttargetaccountsonepropspropertymock"></a>
+
+```typescript
+public readonly mock: AccountConfiguration;
 ```
 
 - *Type:* [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration)
@@ -244,6 +255,7 @@ const accountsTwoProps: AccountsTwoProps = { ... }
 | --- | --- | --- |
 | [`dev`](#almamediaopensourcecdkprojecttargetaccountstwopropspropertydev)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration) | *No description.* |
 | [`prod`](#almamediaopensourcecdkprojecttargetaccountstwopropspropertyprod)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration) | *No description.* |
+| [`mock`](#almamediaopensourcecdkprojecttargetaccountstwopropspropertymock) | [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration) | *No description.* |
 
 ---
 
@@ -267,6 +279,16 @@ public readonly prod: AccountConfiguration;
 
 ---
 
+##### `mock`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.AccountsTwoProps.property.mock" id="almamediaopensourcecdkprojecttargetaccountstwopropspropertymock"></a>
+
+```typescript
+public readonly mock: AccountConfiguration;
+```
+
+- *Type:* [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration)
+
+---
+
 ### AccountThreeProps <a name="@almamedia-open-source/cdk-project-target.AccountThreeProps" id="almamediaopensourcecdkprojecttargetaccountthreeprops"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
@@ -284,6 +306,7 @@ const accountThreeProps: AccountThreeProps = { ... }
 | [`dev`](#almamediaopensourcecdkprojecttargetaccountthreepropspropertydev)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration) | *No description.* |
 | [`preprod`](#almamediaopensourcecdkprojecttargetaccountthreepropspropertypreprod)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration) | *No description.* |
 | [`prod`](#almamediaopensourcecdkprojecttargetaccountthreepropspropertyprod)<span title="Required">*</span> | [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration) | *No description.* |
+| [`mock`](#almamediaopensourcecdkprojecttargetaccountthreepropspropertymock) | [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration) | *No description.* |
 
 ---
 
@@ -311,6 +334,16 @@ public readonly preprod: AccountConfiguration;
 
 ```typescript
 public readonly prod: AccountConfiguration;
+```
+
+- *Type:* [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration)
+
+---
+
+##### `mock`<sup>Optional</sup> <a name="@almamedia-open-source/cdk-project-target.AccountThreeProps.property.mock" id="almamediaopensourcecdkprojecttargetaccountthreepropspropertymock"></a>
+
+```typescript
+public readonly mock: AccountConfiguration;
 ```
 
 - *Type:* [`@almamedia-open-source/cdk-project-target.AccountConfiguration`](#@almamedia-open-source/cdk-project-target.AccountConfiguration)
