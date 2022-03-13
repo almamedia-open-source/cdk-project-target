@@ -1,3 +1,8 @@
+export const mock = {
+  id: '123456789012',
+};
+
+
 export const dev = {
   id: '111111111111',
   config: {

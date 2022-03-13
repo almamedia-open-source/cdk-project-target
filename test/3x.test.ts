@@ -1,13 +1,31 @@
 import { Project } from '@almamedia-open-source/cdk-project-context';
 import { Accounts } from '../src/configurations/accounts';
-import { dev, preprod, prod } from './mock/accounts';
+import { mock, dev, preprod, prod } from './mock/accounts';
 import { defaultProject } from './mock/project';
 
-describe('2x', () => {
+describe('3x', () => {
+  test('mock', () => {
+    const project = new Project({
+      ...defaultProject,
+      accounts: Accounts.three({
+        mock,
+        dev,
+        preprod,
+        prod,
+      }),
+    });
+    const account = Project.getAccount(project, 'mock');
+    expect(account).toEqual({
+      ...mock,
+      environments: ['mock[0-9]'],
+    });
+  });
+
   test('dev', () => {
     const project = new Project({
       ...defaultProject,
       accounts: Accounts.three({
+        mock,
         dev,
         preprod,
         prod,
@@ -29,6 +47,7 @@ describe('2x', () => {
     const project = new Project({
       ...defaultProject,
       accounts: Accounts.three({
+        mock,
         dev,
         preprod,
         prod,
@@ -45,6 +64,7 @@ describe('2x', () => {
     const project = new Project({
       ...defaultProject,
       accounts: Accounts.three({
+        mock,
         dev,
         preprod,
         prod,
@@ -52,6 +72,27 @@ describe('2x', () => {
     });
     const account = Project.getAccount(project, 'prod');
     expect(account).toEqual({
+      ...prod,
+      environments: ['production'],
+    });
+  });
+
+  test('works without mock', () => {
+    const project = new Project({
+      ...defaultProject,
+      accounts: Accounts.three({
+        dev,
+        preprod,
+        prod,
+      }),
+    });
+    const mockAcc = Project.getAccount(project, 'mock');
+    expect(mockAcc).toEqual({
+      ...mock,
+      environments: ['mock[0-9]'],
+    });
+    const prodAcc = Project.getAccount(project, 'prod');
+    expect(prodAcc).toEqual({
       ...prod,
       environments: ['production'],
     });

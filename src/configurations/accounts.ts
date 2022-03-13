@@ -1,7 +1,6 @@
 import { Account } from '@almamedia-open-source/cdk-project-context';
 import { EnvironmentLabel } from './environments';
 
-
 export enum AccountType {
   MOCK='mock',
   SHARED='shared',
@@ -24,19 +23,26 @@ export interface ProjectAccounts {
 }
 
 export interface AccountsOneProps {
+  readonly [AccountType.MOCK]?: AccountConfiguration;
   readonly [AccountType.SHARED]: AccountConfiguration;
 }
 
 export interface AccountsTwoProps {
+  readonly [AccountType.MOCK]?: AccountConfiguration;
   readonly [AccountType.DEV]: AccountConfiguration;
   readonly [AccountType.PROD]: AccountConfiguration;
 }
 
 export interface AccountThreeProps {
+  readonly [AccountType.MOCK]?: AccountConfiguration;
   readonly [AccountType.DEV]: AccountConfiguration;
   readonly [AccountType.PREPROD]: AccountConfiguration;
   readonly [AccountType.PROD]: AccountConfiguration;
 }
+
+const emptyMockAccountProps: AccountConfiguration = {
+  id: '123456789012',
+};
 
 
 export class Accounts {
@@ -61,7 +67,14 @@ export class Accounts {
    * }),
    */
   public static one(props: AccountsOneProps): Record<string, Account> {
+    const mockProps = props[AccountType.MOCK];
     return {
+      [AccountType.MOCK]: {
+        ...(mockProps ? mockProps : emptyMockAccountProps),
+        environments: [
+          EnvironmentLabel.MOCK,
+        ],
+      },
       [AccountType.SHARED]: {
         ...props[AccountType.SHARED],
         environments: [
@@ -101,7 +114,14 @@ export class Accounts {
    * }),
    */
   public static two(props: AccountsTwoProps): Record<string, Account> {
+    const mockProps = props[AccountType.MOCK];
     return {
+      [AccountType.MOCK]: {
+        ...(mockProps ? mockProps : emptyMockAccountProps),
+        environments: [
+          EnvironmentLabel.MOCK,
+        ],
+      },
       [AccountType.DEV]: {
         ...props[AccountType.DEV],
         environments: [
@@ -112,7 +132,6 @@ export class Accounts {
           EnvironmentLabel.STAGING,
         ],
       },
-
       [AccountType.PROD]: {
         ...props[AccountType.PROD],
         environments: [
@@ -151,7 +170,14 @@ export class Accounts {
    * }),
    */
   public static three(props: AccountThreeProps): Record<string, Account> {
+    const mockProps = props[AccountType.MOCK];
     return {
+      [AccountType.MOCK]: {
+        ...(mockProps ? mockProps : emptyMockAccountProps),
+        environments: [
+          EnvironmentLabel.MOCK,
+        ],
+      },
       [AccountType.DEV]: {
         ...props[AccountType.DEV],
         environments: [
