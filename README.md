@@ -1,4 +1,10 @@
-# ![Alma CDK Project Target](/assets/alma-cdk-project-target.png)
+<br/><br/>
+
+🔥 **This project has been deprected in favour of [`alma-cdk/project`](https://github.com/alma-cdk/project).** 🔥 
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+# Alma CDK Project Target
 
 ![CDK Version](https://img.shields.io/badge/CDK-v2-informational "CDK v2")
 ![Stability](https://img.shields.io/badge/Stability-Experimental-yellow "Stability: Experimental")
